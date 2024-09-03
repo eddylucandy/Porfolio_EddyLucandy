@@ -1,0 +1,432 @@
+/* Definición de cambio de color */
+:root{
+    /* Creacion de variables????*/
+    --primary-color: hsl(214, 84%, 56%); /* color primario */
+    --text-color: hsl(0, 0%, 31%); /* color de texto */ 
+    --bg-color: hsl(0, 0%, 90%); /* color del background */
+    --bg-card-color: hsl(0, 0%, 98%); /* color de fondo para las tarjetas o secciones */
+    --transition: color 0.1s, background-color 0.2s ease-in-out; /* Controla el cambio, evitando un cambio brusco */
+    --border-radius: 0.4em;/* Variable que controla el border radios de toda la targeta */
+    --skills-bar-length: 0%; /* Variable para controlar el tamaño de la barra */
+}
+
+/* Aplicación de la propiedad box-sizing a todos los elementos */
+*{
+    box-sizing: border-box; /* Hace que el padding y el borde se incluyan en el tamaño total de los elementos */
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%; /* Ajusta la imagen (Foto de perfil) al tamaño máximo del contenedor */
+    display: block; /* Lo utilizamos por el borde por defecto que viene en la imgen, no dejando redondear en la parte de abajo */
+}
+
+body{
+    margin: 0; /* Elimina los márgenes predeterminados del body */
+    background-color: var(--bg-color); /* Establece el color de fondo según la variable definida */
+    color: var(--text-color); /* Establece el color del texto según la variable definida */
+    transition: var(--transition);
+    font-family: sans-serif;
+}
+
+body.dark{
+    /* Variables para el modo oscuro */
+    --text-color: hsl(0, 0%, 83%); /* color de texto en modo oscuro */
+    --bg-color: hsl(0, 0%, 15%); /* color del background en modo oscuro */  
+    --bg-card-color: hsl(0, 0%, 20%); /* color de fondo de las tarjetas o secciones en modo oscuro */
+}
+
+/* Estilos para el header */
+.header{
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    height: 75px; /* Establece la altura del header */
+    padding: 0 1.5em; /* Agrega padding horizontal al header */
+    background-color: var(--bg-card-color); /* Establece el color de fondo del header según la variable definida */
+    transition: var(--transition);
+}
+
+/* Estilos para el contenedor de interruptores */
+.switches{
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio restante entre los elementos hijos */
+}
+
+
+@media screen and (min-width: 720px) {
+    .switches {
+        position: absolute; /* Opcional: podría usarse para mover el contenedor a una posición específica en pantallas más grandes */
+        top: 20px;
+        left: 20px;
+    }
+}
+
+/* Estilos para el botón de cambio de tema */
+.toggle-theme{
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    cursor: pointer; /* Cambia el cursor a pointer para indicar que es un elemento interactivo */
+}
+
+/* Estilos para el ícono del botón de cambio de tema */
+.toggle-theme__icon{
+    margin-right: 0.5em; /* Agrega un margen derecho al ícono para separarlo del texto */
+    width: 20px; /* Establece el ancho del ícono */
+}
+
+/* Estilos para el texto del botón de cambio de tema */
+.toggle-theme__text{
+    font-size: 0.8rem; /* Establece el tamaño de fuente del texto */
+}
+
+
+.flags{
+    width: 75px;
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio restante entre los elementos hijos */
+}
+
+.flags__item{
+    width: 30px;
+}
+
+.flags__img{
+    display: block;
+    cursor: pointer;
+}
+
+
+.colors {
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    justify-content: space-between; /* Centra los elementos hijos horizontalmente */
+    height: 20px;
+    width: 100px; 
+}
+
+.colors__item{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.colors__item--blue{
+    --primary-color: hsl(214,84%, 56%);
+}
+
+.colors__item--green{
+    --primary-color: hsl(120, 100%, 40%);
+}
+
+.colors__item--purple{
+    --primary-color: hsl(276, 84%, 56%);
+}
+
+.colors__item--orange{
+    --primary-color: hsl(46,84%, 56%);
+}
+
+@media screen and (min-width: 720px) {
+    .colors {
+        position: absolute; /* Fija la posición del contenedor en la pantalla */
+        top: 20px; /* Posiciona 20px desde la parte superior */
+        right: 20px; /* Mueve el contenedor al lado izquierdo en lugar del derecho */
+    }
+}
+
+
+.title{
+    text-align: center;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+/* Para estilo movil*/
+.main{
+    display: grid;
+    padding: 2em;
+    gap: 0.5em;
+}
+
+/* Para estilo escritorio*/
+@media screen and (min-width: 720px){
+    .main{
+        grid-template-columns: min-content 1fr; 
+    }
+}
+
+/* Estilos comunes para las columnas de la izquierda y de la derecha */
+.column{
+    display: grid;
+    gap: 0.5em;
+}
+
+/* Referencia de la tarjetas */
+@media screen and (min-width: 720px){
+    .column--right{
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(3, min-content);
+        align-items: start;
+    }
+}
+
+
+/*Estilo barra lateral */
+.card{
+    background-color: var(--bg-card-color);
+    border-radius: var(--border-radius);
+    padding: 1em;
+}
+
+.card__image-container{
+    min-width: 320px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.card__header{
+    padding: 1em;
+}
+
+.card__title{
+    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+}
+
+.card__subtitle{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.card__link{
+    margin-bottom: 0.5rem;
+}
+
+.card__text{
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 760px) {
+    .card--project{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column: 1 / -1;
+    }    
+}
+
+
+
+.skills{
+    padding: 1em 0;
+}
+
+.skills__header{
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+    margin-left: auto;
+}
+
+.skills__tech{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.skills__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.skills__bar, .skills__bar::after{
+    position: relative;
+    width: 175px;
+    height: 8px;
+    background-color:  #888;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.skills__bar::after{
+    content: "";
+    position: absolute;
+    left: -175px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+    animation: skills-bar-fill 2s ease-in-out forwards; /* Animacion de relleno de la barra de skils */
+}
+
+/* Porcentaje de relleno */
+.skills__bar--10::after {
+    --skills-bar-length: 10%;
+}
+
+.skills__bar--20::after {
+    --skills-bar-length: 20%;
+}
+
+.skills__bar--30::after {
+    --skills-bar-length: 30%;
+}
+
+.skills__bar--40::after {
+    --skills-bar-length: 40%;
+}
+
+.skills__bar--50::after {
+    --skills-bar-length: 50%;
+}
+
+.skills__bar--60::after {
+    --skills-bar-length: 60%;
+}
+
+.skills__bar--70::after {
+    --skills-bar-length: 70%;
+}
+
+.skills__bar--80::after {
+    --skills-bar-length: 80%;
+}
+
+.skills__bar--90::after {
+    --skills-bar-length: 90%;
+
+}
+
+.skills__bar--100::after {
+    --skills-bar-length: 100%;
+
+}
+/* ----------------------------- */
+
+.experience{
+    display: flex;
+    align-items: start;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.experience__image{
+    max-width: 15%;
+    margin-right: 1em;
+}
+
+.experience__time{
+    font-size: 0.8rem;
+    margin-bottom: 0.5em;
+}
+
+.experience__job{
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.experience__description{
+    font-size: 0.8rem;
+    margin-bottom: 1.5em;
+}
+
+.hobbie__description{
+    font-size: 0.8rem;
+    margin-bottom: 1.5em;
+}
+
+/* Clase que permitira sacar la margen */
+.no-margin{
+   margin: 0;
+}
+
+.project{
+    position: relative;
+}
+
+@media screen and (min-width: 760px) {
+    .project{
+        margin-left: 2em;
+    }
+}
+
+.project__tags{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    font-size: 0.6rem;
+    width: 275px;
+}
+
+
+@media screen and (min-width: 760px) {
+    .project__tags{
+        width: 325px;
+        font-size: 0.8rem;
+    }
+}
+
+.project__tag{
+    padding: .4em .8em;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.buttons{
+   display: flex; 
+   justify-content: space-between;
+   width: 225px;
+}
+
+@media screen and (min-width: 760px) {
+    .buttons{
+        position: absolute;
+        bottom: 1em;
+    }
+}
+
+.button{
+    width: 100px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.button--primary{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.button--secondary{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.icon{
+    margin-right: 0.2em;
+}
+
+/* Relleno de la barra */
+@keyframes skills-bar-fill{
+    to{
+        transform: translateX(var(--skills-bar-length));
+    }
+}
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/> <!-- Enlace a Google Fonts para la fuente Poppins -->
+    <link rel="stylesheet" href="css/styles.css" /> <!-- Enlace al archivo de estilos CSS externo -->
+    <title>Portfolio</title> <!-- Título de la página -->
+  </head>
+  <body class="dark"> <!-- El cuerpo de la página con una clase "dark" que puede representar un tema oscuro por defecto -->
+    <header class="header"> 
+      <!-- Contenedor principal para el encabezado de la página -->
+      <div class="switches"> 
+        <!-- Contenedor para los interruptores de temas -->
+        <div id="toggle-theme" class="toggle-theme"> <!-- Contendrá el botón para cambiar el tema, usando la metodología BEM -->
+          <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon"> <!-- Imagen del icono para alternar el tema (por defecto se muestra el icono de la luna) -->
+          <p id="toggle-text" class="toggle-theme__text">Dark Mode</p> <!-- Texto que indica el tema actual (por defecto "Dark Mode") -->
+        </div>
+      </div>
+
+      <!-- Idiomas -->
+       <h5 class="flags__title">Languages</h5>
+       <div id="flags" class="flags">
+        <div class="flags__item" data-language="es"> 
+          <img src="assets/icons/es.svg" alt="Spain" />
+        </div>
+
+        <div class="flags__item" data-language="en"> 
+        <img src="assets/icons/sh.svg" alt="English" />
+        </div>
+       </div>
+
+      <div id="toggle-colors" class="colors">  <!-- Contenedor para la selección de colores personalizados -->
+        <div data-color="hsl(214,84%, 56%)" class="colors__item colors__item--blue"></div> <!-- Opción para cambiar el color a azul -->
+        <div data-color="hsl(120, 100%, 40%)" class="colors__item colors__item--green"></div> <!-- Opción para cambiar el color a verde -->
+        <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div> <!-- Opción para cambiar el color a púrpura -->
+        <div data-color="hsl(46,84%, 56%)" class="colors__item colors__item--orange"></div> <!-- Opción para cambiar el color a naranja -->
+      </div>
+    </header>
+    
+    <main class="main">
+      <!-- Columna de la izquierda -->
+      <section class="column column--left">
+        <!-- Profile Card -->
+        <article class="card card--profile">
+          <div class="card__image-container">
+            <img src="assets/images/profile.jpg" alt="Profile picture" class="card__image">
+          </div>
+
+          <div class="card__header">
+            <h2 class="card__title no-margin">Eddy Lucandy</h2>
+            <p class="card__subtitle" data-section="profile" data-value="rol">Computer Engineer</p>
+          
+            <div class="card__body">
+              <div class="card__link">
+                <i class="fas fa-envelope icon"></i>
+                <a href="malito:eddylucandy@icloud.com">eddylucandy@icloud.com</a>
+              </div>
+
+              <div class="card__link">
+                <i class="fas fa-phone-alt icon"></i>
+                <a href="tel:+34659704699"> +34-659 704 699</a>
+              </div>
+              <p class="card__text" data-section="profile" data-value="description"> <strong>Description</strong> <br> ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, doloribus eum. <br> similique perspiciatis quae accusamus ea distinctio officiis quia iusto, maiores veniam inventore eveniet rerum recusandae aperiam, qui enim.</p>
+            </div>
+        </div>
+        </article>
+
+        <!-- Cards de Experiencia -->
+        <article class="card card--experience">
+          <h2 class="card__title">Experiences</h2>
+          <div class="experience">
+            <img src="assets/images/logo.png"  alt="logo" class="experience__image">
+            <div class="experience__info"> <!-- Info sobre la experiencia  -->
+              <p class="experience__time">Feb 2017 - Current</p>
+              <h3 class="experience__job">Front End Developer</h3>
+              <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.</p>
+            </div>
+          </div>
+
+          <div class="experience">
+            <img src="assets/images/logo.png"  alt="logo" class="experience__image">
+            <div class="experience__info"> <!-- Info sobre la experiencia  -->
+              <p class="experience__time">Dic 2022 - Previous</p>
+              <h3 class="experience__job">Back End Developer</h3>
+              <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.</p>
+            </div>
+          </div>
+
+          <div class="experience">
+            <img src="assets/images/logo.png"  alt="logo" class="experience__image">
+            <div class="experience__info"> <!-- Info sobre la experiencia  -->
+              <p class="experience__time">Jan 2023 - Current</p>
+              <h3 class="experience__job">Data Analytic</h3>
+              <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cards de Hobbies -->
+        <article class="card card--hobbies">
+          <h2 class="card__title">Hobbies</h2>
+          <div class="card__image-container">
+            <img src="assets/images/hobbie.jpg" alt="Man on Bike">
+          </div>
+          <h3 class="hobbie__title">Biking</h3>
+          <p class="hobbie__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.</p>
+        </article>
+      </section>
+
+      <!-- Columna de la derecha -->
+      <section class="column column--right">
+        <article class="card">
+          <h2 class="card__title">Front End</h2>
+          <small>Years of Experience </small>
+          <div class="skills">
+            <div class="skills__header">
+              <span class="skills__start-levels">0</span>
+              <span class="skills__start-levels">10</span>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">PHP</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">React</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <h2 class="card__title">Design</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">Photoshop</p>
+              <div class="skills__bar skills__bar--100"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Ilustrator</p>
+              <div class="skills__bar skills__bar--20"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Figma</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Multimedia</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">After Effects</p>
+              <div class="skills__bar skills__bar--40"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Premiere</p>
+              <div class="skills__bar skills__bar--30"></div>
+            </div>
+            </div>
+        </article>
+
+        <!-- Cards de proyectos -->
+        <article class="card card--project">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag">#HTML</span>
+              <span class="project__tag">#CSS</span>
+              <span class="project__tag">#JavaScript</span>
+              <span class="project__tag">#React</span>
+            </div>
+            <h2 class="card__title">Landing Page</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.</p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Visit website</a>
+              <a href="#" class="button button--secondary">Code</a>
+            </div>
+        </div>
+        </article>
+
+        <article class="card card--project">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag">#C++</span>
+            </div>
+            <h2 class="card__title">Pokemon</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.</p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Visit website</a>
+              <a href="#" class="button button--secondary">Code</a>
+            </div>
+        </div>
+        </article>
+      </section>
+    </main>
+    <script src="js/scripts.js"></script> <!-- Enlace al archivo de JavaScript externo -->
+  </body>
+</html>

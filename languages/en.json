@@ -1,0 +1,31 @@
+{
+    "profile": {
+        "rol": "Computer Engineer",
+        "description": "<strong>EN.</strong> <br> ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, doloribus eum. <br> similique perspiciatis quae accusamus ea distinctio officiis quia iusto, maiores veniam inventore eveniet rerum recusandae aperiam, qui enim." 
+    },
+    "experience": {
+        "first-job-company": "Google",
+        "first-job-position": "Software Engineer",
+        "first-job-duration": "2018-present",
+        "first-job-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.",
+
+        "second-job-company": "Facebook",
+        "second-job-position": "Software Engineer",
+        "second-job-duration": "2016-2018",
+        "second-job-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam.",
+
+        "third-job-company": "Apple",
+        "third-job-position": "Software Engineer",
+        "third-job-duration": "2014-2016",
+        "third-job-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam."
+    },
+    "projects":{
+        "project1-title": "Project 1",
+        "project1-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, necessitatibus. Vel aspernatur, quos harum facilis laboriosam, earum, nemo veniam quod veniam commodi dignissimos repellendus asperiores ex!",
+        "project1-technologies": ["React", "JavaScript", "Redux"],
+
+        "project2-title": "Project 2",
+        "project2-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, necessitatibus. Vel aspernatur, quos harum facilis laboriosam, earum, nemo veniam quod veniam commodi dignissimos repellendus asperiores ex!",
+        "project2-technologies": ["Angular", "TypeScript", "Node.js"]
+    }
+}

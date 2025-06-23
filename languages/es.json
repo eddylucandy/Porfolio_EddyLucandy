@@ -1,7 +1,7 @@
 {
     "profile": {
         "rol": "Ingeniero de Informatica",
-        "description": "<strong>ES.</strong> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explicabo, doloribus eum. Similique perspiciatis quae accusamus ea distinctio officiis quia iusto, maiores veniam inventore eveniet rerum recusandae aperiam, qui enim." 
+        "description": "<strong>SOBRE MI</strong> <br> Soy Eddy Lucandy Zacarias Serafim Alexandre, nacido en Cuba y de nacionalidad angoleña. Soy ingeniero informático con una sólida formación técnica y una gran motivación por aplicar mis conocimientos en proyectos desafiantes. Me caracterizo por mi voluntad de seguir aprendiendo continuamente y adquirir experiencia laboral valiosa.<br> A lo largo de mi trayectoria profesional, he participado en diversos proyectos, desempeñándome tanto como desarrollador como en roles relacionados con el marketing, lo que me ha permitido desarrollar habilidades multidisciplinarias.<br> Mi lema,\"Viviendo y aprendiendo\", refleja mi compromiso con el crecimiento personal y profesional, aprovechando cada experiencia, grande o pequeña, como una oportunidad para mejorar y aportar valor."
     },
     "experience": {
         "first-job-company": "Google",
@@ -20,12 +20,12 @@
         "third-job-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam."
     },
     "projects":{
-        "project1-title": "Project 1",
+        "project1-title": "Visualización y Programación Práctica de Memoria EPROM 27C64",
         "project1-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, necessitatibus. Vel aspernatur, quos harum facilis laboriosam, earum, nemo veniam quod veniam commodi dignissimos repellendus asperiores ex!",
         "project1-technologies": ["React", "JavaScript", "Redux"],
 
-        "project2-title": "Project 2",
-        "project2-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, necessitatibus. Vel aspernatur, quos harum facilis laboriosam, earum, nemo veniam quod veniam commodi dignissimos repellendus asperiores ex!",
+        "project2-title": "Coche inteligente con ROS",
+        "project2-description": "Este proyecto consistió en el desarrollo de una plataforma móvil autónoma controlada mediante ROS (Robot Operating System).<br> La solución integra hardware y software para ofrecer\nnavegación y detección de obstáculos de manera\ninteligente.",
         "project2-technologies": ["Angular", "TypeScript", "Node.js"]
     }
 }

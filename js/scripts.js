@@ -20,7 +20,6 @@ const changeLanguage = async (language) => {
         const section = textToChange.dataset.section;
         const value = textToChange.dataset.value;
         textToChange.innerHTML = texts[section][value];
-        // Al reves del "innerHTML" podriamos utilizar el "textContent" esto sirve para tener en cuenta caracteristicas html 
     }
 };
 

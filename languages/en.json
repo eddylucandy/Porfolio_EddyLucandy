@@ -21,11 +21,21 @@
     },
     "project":{
         "project1-title": "Visualization and Practical Programming of EPROM Memory 27C64",
-        "project1-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, necessitatibus. Vel aspernatur, quos harum facilis laboriosam, earum, nemo veniam quod veniam commodi dignissimos repellendus asperiores ex!",
-        "project1-technologies": ["React", "JavaScript", "Redux"],
+        "project1-description": "The project uses software such as Proteus for simulation and HxD for hexadecimal programming. In the practical example, the memory was programmed to display the name \"EDDY\" on the display, demonstrating the ability to store and reproduce information accurately, demonstrating a practical exercise to understand the fundamentals of memory programming and its application in electronic systems basics.",
 
         "project2-title": "Smart car with ROS",
-        "project2-description": "This project consisted of the development of an autonomous mobile platform controlled by ROS (Robot\nOperating System).<br> The solution integrates hardware and software to offer intelligent navigation and obstacle detection.",
-        "project2-technologies": ["Angular", "TypeScript", "Node.js"]
+        "project2-description": "This project consisted of the development of an autonomous mobile platform controlled by ROS (Robot Operating System).<br> The solution integrates hardware and software to offer intelligent navigation and obstacle detection.",
+
+        "project3-title": "SenseYou",
+        "project3-description": "A project seeks to provide an innovative solution to the challenge that Alzheimer's represents. We have designed an advanced telecare system that facilitates monitoring, care, and communication between patients, caregivers, and doctors. <br>The system includes integrated sensors to guarantee the safety of the patient in their home, allowing anomalies such as gas leaks, sudden changes in temperature, or departures at unusual times to be detected. It also has an SOS button for emergencies. The information collected is organized into intuitive tables and graphs, helping doctors and caregivers make informed decisions.",
+
+        "project4-title": "CyberFootball",
+        "project4-description": "This project is based on the creation of an analytical tool for Mister Fantasy users. Our application is designed to assist users in the strategic selection of players for their teams, optimizing performance according to three fundamental variables: predicted points, price, and position on the field. <br>Through advanced data analysis techniques and predictive algorithms, the system will evaluate historical and current player statistics.",
+
+        "project6-title": "Game4hope",
+        "project6-description": "Game4Hope is an innovative web platform designed to support people ages 8 and up who face emotional challenges, such as depression and anxiety, through the strategic use of video games. <br>This project combines therapy, entertainment, and education, offering a safe, welcoming space that encourages mental and emotional well-being.",
+
+        "project5-title": "RoadMate",
+        "project5-description": "RoadMate is an innovative mobile application developed for students of the European University of Madrid with the aim of optimizing their trips to campus. The tool is designed to reduce transportation costs and travel times, while encouraging interaction and collaboration between members of the university community. <br>Through the Design Thinking approach, we focus on optimizing both the user experience (UX) and the visual and interactive design (UI) of the application. RoadMate allows students to share rides with peers, offering an affordable, comfortable and efficient alternative to conventional transportation. In addition, the application includes functionalities such as the publication of travel announcements, messaging between users and options to customize transportation preferences."
     }
 }

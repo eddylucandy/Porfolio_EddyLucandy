@@ -19,13 +19,23 @@
         "third-job-duration": "2014-2016",
         "third-job-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, voluptatum, autem deleniti, eveniet necessitatibus voluptates quia molestias quo reiciendis. Quidem, veniam."
     },
-    "projects":{
+    "project":{
         "project1-title": "Visualización y Programación Práctica de Memoria EPROM 27C64",
-        "project1-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, necessitatibus. Vel aspernatur, quos harum facilis laboriosam, earum, nemo veniam quod veniam commodi dignissimos repellendus asperiores ex!",
-        "project1-technologies": ["React", "JavaScript", "Redux"],
+        "project1-description": "El proyecto utiliza software como Proteus para la simulación y HxD para la programación hexadecimal. En el ejemplo práctico, se programó la memoria para mostrar el nombre \"EDDY\" en el display, demostrando la capacidad de almacenar y reproducir información de manera precisa, demostrando un ejercicio práctico para comprender los fundamentos de programación de memorias y su aplicación en sistemas electrónicos básicos.",
 
         "project2-title": "Coche inteligente con ROS",
-        "project2-description": "Este proyecto consistió en el desarrollo de una plataforma móvil autónoma controlada mediante ROS (Robot Operating System).<br> La solución integra hardware y software para ofrecer\nnavegación y detección de obstáculos de manera\ninteligente.",
-        "project2-technologies": ["Angular", "TypeScript", "Node.js"]
+        "project2-description": "Este proyecto consistió en el desarrollo de una plataforma móvil autónoma controlada mediante ROS (Robot Operating System).<br> La solución integra hardware y software para ofrecer navegación y detección de obstáculos de manera inteligente.",
+
+        "project3-title": "SenseYou",
+        "project3-description": "Un proyecto busca brindar una solución innovadora al desafío que representa el Alzheimer. Hemos diseñado un sistema de teleasistencia avanzada que facilita el monitoreo, cuidado y comunicación entre pacientes, cuidadores y médicos. <br>El sistema incluye sensores integrados para garantizar la seguridad del paciente en su hogar, permitiendo detectar anomalías como fugas de gas, cambios bruscos de temperatura, o salidas en horarios no habituales. También cuenta con un botón SOS para emergencias. La información recopilada se organiza en tablas y gráficas intuitivas, ayudando a médicos y cuidadores a tomar decisiones informadas.",
+
+        "project4-title": "CyberFootball",
+        "project4-description": "Ese proyecto se basa en la creación de una herramienta analítica para usuarios de “Mister Fantasy”. Nuestra aplicación está diseñado para asistir a los usuarios en la selección estratégica de jugadores para sus equipos, optimizando el rendimiento según tres variables fundamentales: puntos predichos, precio y posición en el campo. <br>A través de técnicas avanzadas de análisis de datos y algoritmos predictivos, el sistema evaluará estadísticas históricas y actuales de los jugadores.",
+
+        "project5-title": "Game4hope",
+        "project5-description": "Game4Hope es una plataforma web innovadora diseñada para apoyar personas a partir de los 8 años que enfrentan desafíos emocionales, como la depresión y la ansiedad, mediante el uso estratégico de videojuegos. <br>Este proyecto combina elementos de terapia, entretenimiento y educación, ofreciendo un espacio seguro y acogedor que fomenta el bienestar mental y emocional.",
+
+        "project6-title": "RoadMate",
+        "project6-description": "RoadMate es una innovadora aplicación móvil desarrollada para estudiantes de la Universidad Europea de Madrid con el objetivo de optimizar sus desplazamientos al campus. La herramienta está diseñada para reducir costos de transporte y tiempos de viaje, al mismo tiempo que fomenta la interacción y la colaboración entre los miembros de la comunidad universitaria. <br>Mediante el enfoque de **Design Thinking**, nos enfocamos en optimizar tanto la experiencia del usuario (UX) como el diseño visual e interactivo (UI) de la aplicación. RoadMate permite a los estudiantes compartir viajes con compañeros, ofreciendo una alternativa económica, cómoda y eficiente al transporte convencional. Además, la aplicación incluye funcionalidades como la publicación de anuncios de viaje, mensajería entre usuarios y opciones para personalizar preferencias de transporte."
     }
 }

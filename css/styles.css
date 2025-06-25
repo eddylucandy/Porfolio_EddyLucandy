@@ -1,118 +1,157 @@
 /* Definición de cambio de color */
-:root{
+:root {
     /* Creacion de variables????*/
-    --primary-color: hsl(214, 84%, 56%); /* color primario */
-    --text-color: hsl(0, 0%, 31%); /* color de texto */ 
-    --bg-color: hsl(0, 0%, 90%); /* color del background */
-    --bg-card-color: hsl(0, 0%, 98%); /* color de fondo para las tarjetas o secciones */
-    --transition: color 0.1s, background-color 0.2s ease-in-out; /* Controla el cambio, evitando un cambio brusco */
-    --border-radius: 0.4em;/* Variable que controla el border radios de toda la targeta */
-    --skills-bar-length: 0%; /* Variable para controlar el tamaño de la barra */
+    --primary-color: hsl(214, 84%, 56%);
+    /* color primario */
+    --text-color: hsl(0, 0%, 31%);
+    /* color de texto */
+    --bg-color: hsl(0, 0%, 90%);
+    /* color del background */
+    --bg-card-color: hsl(0, 0%, 98%);
+    /* color de fondo para las tarjetas o secciones */
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
+    /* Controla el cambio, evitando un cambio brusco */
+    --border-radius: 0.4em;
+    /* Variable que controla el border radios de toda la targeta */
+    --skills-bar-length: 0%;
+    /* Variable para controlar el tamaño de la barra */
 }
 
 /* Aplicación de la propiedad box-sizing a todos los elementos */
-*{
-    box-sizing: border-box; /* Hace que el padding y el borde se incluyan en el tamaño total de los elementos */
+* {
+    box-sizing: border-box;
+    /* Hace que el padding y el borde se incluyan en el tamaño total de los elementos */
 }
 
-a{
+a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-img{
-    max-width: 100%; /* Ajusta la imagen (Foto de perfil) al tamaño máximo del contenedor */
-    display: block; /* Lo utilizamos por el borde por defecto que viene en la imgen, no dejando redondear en la parte de abajo */
+img {
+    max-width: 100%;
+    /* Ajusta la imagen (Foto de perfil) al tamaño máximo del contenedor */
+    display: block;
+    /* Lo utilizamos por el borde por defecto que viene en la imgen, no dejando redondear en la parte de abajo */
 }
 
-body{
-    margin: 0; /* Elimina los márgenes predeterminados del body */
-    background-color: var(--bg-color); /* Establece el color de fondo según la variable definida */
-    color: var(--text-color); /* Establece el color del texto según la variable definida */
+body {
+    margin: 0;
+    /* Elimina los márgenes predeterminados del body */
+    background-color: var(--bg-color);
+    /* Establece el color de fondo según la variable definida */
+    color: var(--text-color);
+    /* Establece el color del texto según la variable definida */
     transition: var(--transition);
     font-family: sans-serif;
 }
 
-body.dark{
+body.dark {
     /* Variables para el modo oscuro */
-    --text-color: hsl(0, 0%, 83%); /* color de texto en modo oscuro */
-    --bg-color: hsl(0, 0%, 15%); /* color del background en modo oscuro */  
-    --bg-card-color: hsl(0, 0%, 20%); /* color de fondo de las tarjetas o secciones en modo oscuro */
+    --text-color: hsl(0, 0%, 83%);
+    /* color de texto en modo oscuro */
+    --bg-color: hsl(0, 0%, 15%);
+    /* color del background en modo oscuro */
+    --bg-card-color: hsl(0, 0%, 20%);
+    /* color de fondo de las tarjetas o secciones en modo oscuro */
 }
 
 /* Estilos para el header */
-.header{
-    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
-    align-items: center; /* Centra los elementos hijos verticalmente */
-    justify-content: center; /* Centra los elementos hijos horizontalmente */
-    height: 75px; /* Establece la altura del header */
-    padding: 0 1.5em; /* Agrega padding horizontal al header */
-    background-color: var(--bg-card-color); /* Establece el color de fondo del header según la variable definida */
+.header {
+    display: flex;
+    /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center;
+    /* Centra los elementos hijos verticalmente */
+    justify-content: center;
+    /* Centra los elementos hijos horizontalmente */
+    height: 75px;
+    /* Establece la altura del header */
+    padding: 0 1.5em;
+    /* Agrega padding horizontal al header */
+    background-color: var(--bg-card-color);
+    /* Establece el color de fondo del header según la variable definida */
     transition: var(--transition);
 }
 
 /* Estilos para el contenedor de interruptores */
-.switches{
-    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
-    align-items: center; /* Centra los elementos hijos verticalmente */
-    justify-content: space-between; /* Distribuye el espacio restante entre los elementos hijos */
+.switches {
+    display: flex;
+    /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center;
+    /* Centra los elementos hijos verticalmente */
+    justify-content: space-between;
+    /* Distribuye el espacio restante entre los elementos hijos */
 }
 
 
 @media screen and (min-width: 720px) {
     .switches {
-        position: absolute; /* Opcional: podría usarse para mover el contenedor a una posición específica en pantallas más grandes */
+        position: absolute;
+        /* Opcional: podría usarse para mover el contenedor a una posición específica en pantallas más grandes */
         top: 20px;
         left: 20px;
     }
 }
 
 /* Estilos para el botón de cambio de tema */
-.toggle-theme{
-    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
-    align-items: center; /* Centra los elementos hijos verticalmente */
-    justify-content: center; /* Centra los elementos hijos horizontalmente */
-    cursor: pointer; /* Cambia el cursor a pointer para indicar que es un elemento interactivo */
+.toggle-theme {
+    display: flex;
+    /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center;
+    /* Centra los elementos hijos verticalmente */
+    justify-content: center;
+    /* Centra los elementos hijos horizontalmente */
+    cursor: pointer;
+    /* Cambia el cursor a pointer para indicar que es un elemento interactivo */
 }
 
 /* Estilos para el ícono del botón de cambio de tema */
-.toggle-theme__icon{
-    margin-right: 0.5em; /* Agrega un margen derecho al ícono para separarlo del texto */
-    width: 20px; /* Establece el ancho del ícono */
+.toggle-theme__icon {
+    margin-right: 0.5em;
+    /* Agrega un margen derecho al ícono para separarlo del texto */
+    width: 20px;
+    /* Establece el ancho del ícono */
 }
 
 /* Estilos para el texto del botón de cambio de tema */
-.toggle-theme__text{
-    font-size: 0.8rem; /* Establece el tamaño de fuente del texto */
+.toggle-theme__text {
+    font-size: 0.8rem;
+    /* Establece el tamaño de fuente del texto */
 }
 
 
-.flags{
+.flags {
     width: 75px;
-    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
-    align-items: center; /* Centra los elementos hijos verticalmente */
-    justify-content: space-between; /* Distribuye el espacio restante entre los elementos hijos */
+    display: flex;
+    /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center;
+    /* Centra los elementos hijos verticalmente */
+    justify-content: space-between;
+    /* Distribuye el espacio restante entre los elementos hijos */
 }
 
-.flags__item{
+.flags__item {
     width: 30px;
 }
 
-.flags__img{
+.flags__img {
     display: block;
     cursor: pointer;
 }
 
 
 .colors {
-    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
-    align-items: center; /* Centra los elementos hijos verticalmente */
-    justify-content: space-between; /* Centra los elementos hijos horizontalmente */
+    display: flex;
+    /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center;
+    /* Centra los elementos hijos verticalmente */
+    justify-content: space-between;
+    /* Centra los elementos hijos horizontalmente */
     height: 20px;
-    width: 100px; 
+    width: 100px;
 }
 
-.colors__item{
+.colors__item {
     width: 20px;
     height: 20px;
     border: 1px solid var(--text-color);
@@ -120,199 +159,242 @@ body.dark{
     background-color: var(--primary-color);
 }
 
-.colors__item--blue{
-    --primary-color: hsl(214,84%, 56%);
+.colors__item--blue {
+    --primary-color: hsl(214, 84%, 56%);
 }
 
-.colors__item--green{
+.colors__item--green {
     --primary-color: hsl(120, 100%, 40%);
 }
 
-.colors__item--purple{
+.colors__item--purple {
     --primary-color: hsl(276, 84%, 56%);
 }
 
-.colors__item--orange{
-    --primary-color: hsl(46,84%, 56%);
+.colors__item--orange {
+    --primary-color: hsl(46, 84%, 56%);
 }
 
 @media screen and (min-width: 720px) {
     .colors {
-        position: absolute; /* Fija la posición del contenedor en la pantalla */
-        top: 20px; /* Posiciona 20px desde la parte superior */
-        right: 20px; /* Mueve el contenedor al lado izquierdo en lugar del derecho */
+        position: absolute;
+        /* Fija la posición del contenedor en la pantalla */
+        top: 20px;
+        /* Posiciona 20px desde la parte superior */
+        right: 20px;
+        /* Mueve el contenedor al lado izquierdo en lugar del derecho */
     }
 }
 
 
-.title{
+.title {
     text-align: center;
     color: var(--primary-color);
     transition: var(--transition);
 }
 
 /* Para estilo movil*/
-.main{
+.main {
     display: grid;
     padding: 2em;
     gap: 0.5em;
 }
 
 /* Para estilo escritorio*/
-@media screen and (min-width: 720px){
-    .main{
-        grid-template-columns: min-content 1fr; 
+@media screen and (min-width: 720px) {
+    .main {
+        grid-template-columns: min-content 1fr;
     }
 }
 
 /* Estilos comunes para las columnas de la izquierda y de la derecha */
-.column{
+.column {
     display: grid;
     gap: 0.5em;
 }
 
 /* Referencia de la tarjetas */
-@media screen and (min-width: 720px){
-    .column--right{
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: repeat(3, min-content);
+@media screen and (min-width: 720px) {
+    .column--right {
+        /* Eliminamos el grid de 3 columnas para que el skills-container tome el ancho completo y maneje su propio layout interno */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; /* Permite que el contenido determine la altura */
         align-items: start;
+        overflow: hidden; /* Importante para el carrusel, oculta las barras de desplazamiento */
     }
 }
 
 
 /*Estilo barra lateral */
-.card{
+.card {
     background-color: var(--bg-card-color);
     border-radius: var(--border-radius);
     padding: 1em;
 }
 
-.card__image-container{
+.card__image-container {
     min-width: 320px;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
 
-.card__header{
+.card__header {
     padding: 1em;
 }
 
-.card__title{
+.card__title {
     margin-bottom: 0.5em;
     font-size: 1.2rem;
 }
 
-.card__subtitle{
+.card__subtitle {
     font-size: 0.9rem;
     opacity: 0.8;
 }
 
-.card__link{
+.card__link {
     margin-bottom: 0.5rem;
 }
 
-.card__text{
+.card__text {
     font-size: 0.9rem;
     line-height: 1.4;
 }
 
 @media screen and (min-width: 760px) {
-    .card--project{
+    .card--project {
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-column: 1 / -1;
-    }    
+    }
 }
 
+/* ESTILOS PARA EL CONTENEDOR DE SKILLS Y EL SWIPE */
+.skills-container {
+    display: flex;
+    /* Muestra las tarjetas en fila */
+    overflow-x: scroll;
+    /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory;
+    /* Hace que el scroll se "ajuste" a cada tarjeta */
+    -webkit-overflow-scrolling: touch;
+    /* Mejora el scroll en iOS */
+    gap: 1em;
+    /* Espacio entre tarjetas */
+    padding: 1em; /* Padding para evitar que las tarjetas se peguen a los bordes */
+    /* Eliminar el width fijo para que se adapte al contenedor y permita el scroll */
+    width: 100%; /* Asegura que ocupe el ancho disponible de column--right */
+}
+
+.skills-container::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+}
+
+/* Estilos para las tarjetas de habilidad dentro del carrusel */
+.skills-card {
+    flex: 0 0 90%; /* Ajusta el ancho de la tarjeta para mostrar una por completo y un poco de la siguiente */
+    max-width: 300px; /* Limita el ancho máximo para evitar que sean demasiado grandes en pantallas muy amplias */
+    scroll-snap-align: start; /* Alinea el inicio de cada tarjeta al punto de snap */
+}
+
+/* Puedes ajustar el 'flex-basis' para controlar cuántas tarjetas se ven a la vez
+   Por ejemplo:
+   flex: 0 0 100%; // Una tarjeta completa a la vez
+   flex: 0 0 48%;  // Casi dos tarjetas a la vez (con un gap)
+*/
 
 
-.skills{
+.skills {
     padding: 1em 0;
 }
 
-.skills__header{
+.skills__header {
     display: flex;
     justify-content: space-between;
     width: 175px;
-    margin-left: auto;
+    margin-left: auto; /* Mantiene el header alineado a la derecha del contenedor de habilidad */
 }
 
-.skills__tech{
+.skills__tech {
     margin: 0;
     font-size: 0.8rem;
 }
 
-.skills__item{
+.skills__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.5em;
 }
 
-.skills__bar, .skills__bar::after{
+.skills__bar,
+.skills__bar::after {
     position: relative;
     width: 175px;
     height: 8px;
-    background-color:  #888;
+    background-color: #888;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
 
-.skills__bar::after{
+.skills__bar::after {
     content: "";
     position: absolute;
-    left: -175px;
+    right: 0;
+    /* Inicia la barra de relleno desde la derecha */
     background-color: var(--primary-color);
     transition: var(--transition);
-    animation: skills-bar-fill 2s ease-in-out forwards; /* Animacion de relleno de la barra de skils */
+    animation: skills-bar-fill 2s ease-in-out forwards;
+    /* Animación de relleno */
+    transform: translateX(100%);
+    /* La barra está inicialmente fuera de la vista, a la derecha */
 }
 
-/* Porcentaje de relleno */
+/* Porcentaje de relleno (ahora el --skills-bar-length indica cuánto se DESPLAZA la barra hacia la izquierda) */
 .skills__bar--10::after {
-    --skills-bar-length: 10%;
+    --skills-bar-length: -10%; /* Se desplaza 10% a la izquierda para llenar el 10% */
 }
 
 .skills__bar--20::after {
-    --skills-bar-length: 20%;
+    --skills-bar-length: -20%;
 }
 
 .skills__bar--30::after {
-    --skills-bar-length: 30%;
+    --skills-bar-length: -30%;
 }
 
 .skills__bar--40::after {
-    --skills-bar-length: 40%;
+    --skills-bar-length: -40%;
 }
 
 .skills__bar--50::after {
-    --skills-bar-length: 50%;
+    --skills-bar-length: -50%;
 }
 
 .skills__bar--60::after {
-    --skills-bar-length: 60%;
+    --skills-bar-length: -60%;
 }
 
 .skills__bar--70::after {
-    --skills-bar-length: 70%;
+    --skills-bar-length: -70%;
 }
 
 .skills__bar--80::after {
-    --skills-bar-length: 80%;
+    --skills-bar-length: -80%;
 }
 
 .skills__bar--90::after {
-    --skills-bar-length: 90%;
-
+    --skills-bar-length: -90%;
 }
 
 .skills__bar--100::after {
-    --skills-bar-length: 100%;
-
+    --skills-bar-length: -100%; /* Se desplaza 100% a la izquierda para llenar el 100% */
 }
+
 /* ----------------------------- */
 
-.experience{
+.experience {
     display: flex;
     align-items: start;
     margin-bottom: 1em;
@@ -322,49 +404,49 @@ body.dark{
     transition: var(--transition);
 }
 
-.experience__image{
+.experience__image {
     max-width: 15%;
     margin-right: 1em;
 }
 
-.experience__time{
+.experience__time {
     font-size: 0.8rem;
     margin-bottom: 0.5em;
 }
 
-.experience__job{
+.experience__job {
     margin: 0;
     margin-bottom: 0.5em;
     color: var(--primary-color);
     transition: var(--transition);
 }
 
-.experience__description{
+.experience__description {
     font-size: 0.8rem;
     margin-bottom: 1.5em;
 }
 
-.hobbie__description{
+.hobbie__description {
     font-size: 0.8rem;
     margin-bottom: 1.5em;
 }
 
 /* Clase que permitira sacar la margen */
-.no-margin{
-   margin: 0;
+.no-margin {
+    margin: 0;
 }
 
-.project{
+.project {
     position: relative;
 }
 
 @media screen and (min-width: 760px) {
-    .project{
+    .project {
         margin-left: 2em;
     }
 }
 
-.project__tags{
+.project__tags {
     display: flex;
     justify-content: space-between;
     margin: 0.5em 0;
@@ -374,33 +456,33 @@ body.dark{
 
 
 @media screen and (min-width: 760px) {
-    .project__tags{
+    .project__tags {
         width: 325px;
         font-size: 0.8rem;
     }
 }
 
-.project__tag{
+.project__tag {
     padding: .4em .8em;
     border-radius: var(--border-radius);
     background-color: var(--primary-color);
     color: var(--bg-color);
 }
 
-.buttons{
-   display: flex; 
-   justify-content: space-between;
-   width: 225px;
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
 }
 
 @media screen and (min-width: 760px) {
-    .buttons{
+    .buttons {
         position: absolute;
         bottom: 1em;
     }
 }
 
-.button{
+.button {
     width: 100px;
     line-height: 2.5;
     text-align: center;
@@ -408,25 +490,24 @@ body.dark{
     transition: var(--transition);
 }
 
-.button--primary{
+.button--primary {
     background-color: var(--primary-color);
     color: var(--bg-color);
 }
 
-.button--secondary{
+.button--secondary {
     background-color: transparent;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
 
-.icon{
+.icon {
     margin-right: 0.2em;
 }
 
 /* Relleno de la barra */
-@keyframes skills-bar-fill{
-    to{
+@keyframes skills-bar-fill {
+    to {
         transform: translateX(var(--skills-bar-length));
     }
 }
-

@@ -283,7 +283,10 @@ body.dark {
     /* Espacio entre tarjetas */
     padding: 1em; /* Padding para evitar que las tarjetas se peguen a los bordes */
     /* Eliminar el width fijo para que se adapte al contenedor y permita el scroll */
-    width: 100%; /* Asegura que ocupe el ancho disponible de column--right */
+    width: 150%; /* Asegura que ocupe el ancho disponible de column--right */
+    margin-top: -1.4%;
+    margin-left: -1.4%;
+    margin-bottom: -1.2%;
 }
 
 .skills-container::-webkit-scrollbar {
@@ -309,6 +312,14 @@ body.dark {
     padding: 1em 0;
 }
 
+.skills__header__info {
+    display: flex;
+    align-items: center;     /* Centra verticalmente */
+    justify-content: space-between;  /* Opcional: espacio entre ambos */
+    gap: 1em;                /* Espacio horizontal entre el texto y los números */
+}
+
+
 .skills__header {
     display: flex;
     justify-content: space-between;
@@ -318,6 +329,7 @@ body.dark {
 
 .skills__tech {
     margin: 0;
+    margin-right: 20px;
     font-size: 0.8rem;
 }
 
@@ -448,10 +460,11 @@ body.dark {
 
 .project__tags {
     display: flex;
-    justify-content: space-between;
-    margin: 0.5em 0;
-    font-size: 0.6rem;
-    width: 275px;
+
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.75rem;
+    white-space: nowrap;
 }
 
 

@@ -128,6 +128,7 @@ body.dark {
     /* Centra los elementos hijos verticalmente */
     justify-content: space-between;
     /* Distribuye el espacio restante entre los elementos hijos */
+    margin-left: 5px;
 }
 
 .flags__item {
@@ -217,10 +218,10 @@ body.dark {
 @media screen and (min-width: 720px) {
     .column--right {
         /* Eliminamos el grid de 3 columnas para que el skills-container tome el ancho completo y maneje su propio layout interno */
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr;
         grid-template-rows: auto; /* Permite que el contenido determine la altura */
-        align-items: start;
-        overflow: hidden; /* Importante para el carrusel, oculta las barras de desplazamiento */
+        margin-bottom: 60rem;
+         overflow: hidden; /* Importante para el carrusel, oculta las barras de desplazamiento */
     }
 }
 
@@ -287,7 +288,11 @@ body.dark {
     margin-top: -1.4%;
     margin-left: -1.4%;
     margin-bottom: -1.2%;
+    padding-right: 38em;
 }
+
+
+
 
 .skills-container::-webkit-scrollbar {
     display: none;
@@ -365,43 +370,43 @@ body.dark {
 
 /* Porcentaje de relleno (ahora el --skills-bar-length indica cuánto se DESPLAZA la barra hacia la izquierda) */
 .skills__bar--10::after {
-    --skills-bar-length: -10%; /* Se desplaza 10% a la izquierda para llenar el 10% */
+    --skills-bar-length: 10%; /* Se desplaza 10% a la izquierda para llenar el 10% */
 }
 
 .skills__bar--20::after {
-    --skills-bar-length: -20%;
+    --skills-bar-length: 20%;
 }
 
 .skills__bar--30::after {
-    --skills-bar-length: -30%;
+    --skills-bar-length: 30%;
 }
 
 .skills__bar--40::after {
-    --skills-bar-length: -40%;
+    --skills-bar-length: 40%;
 }
 
 .skills__bar--50::after {
-    --skills-bar-length: -50%;
+    --skills-bar-length: 50%;
 }
 
 .skills__bar--60::after {
-    --skills-bar-length: -60%;
+    --skills-bar-length: 60%;
 }
 
 .skills__bar--70::after {
-    --skills-bar-length: -70%;
+    --skills-bar-length: 70%;
 }
 
 .skills__bar--80::after {
-    --skills-bar-length: -80%;
+    --skills-bar-length: 80%;
 }
 
 .skills__bar--90::after {
-    --skills-bar-length: -90%;
+    --skills-bar-length: 90%;
 }
 
 .skills__bar--100::after {
-    --skills-bar-length: -100%; /* Se desplaza 100% a la izquierda para llenar el 100% */
+    --skills-bar-length: 100%; /* Se desplaza 100% a la izquierda para llenar el 100% */
 }
 
 /* ----------------------------- */

@@ -37,5 +37,21 @@
 
         "project6-title": "RoadMate",
         "project6-description": "RoadMate es una innovadora aplicación móvil desarrollada para estudiantes de la Universidad Europea de Madrid con el objetivo de optimizar sus desplazamientos al campus. La herramienta está diseñada para reducir costos de transporte y tiempos de viaje, al mismo tiempo que fomenta la interacción y la colaboración entre los miembros de la comunidad universitaria. <br><br>Mediante el enfoque de **Design Thinking**, nos enfocamos en optimizar tanto la experiencia del usuario (UX) como el diseño visual e interactivo (UI) de la aplicación. RoadMate permite a los estudiantes compartir viajes con compañeros, ofreciendo una alternativa económica, cómoda y eficiente al transporte convencional. Además, la aplicación incluye funcionalidades como la publicación de anuncios de viaje, mensajería entre usuarios y opciones para personalizar preferencias de transporte."
+    },
+    "hobbies": {
+        "hobbies1-title": "\uD83C\uDFAE Videojuegos",
+        "hobbies1-descripcion": "Me apasionan los videojuegos tanto por su valor de entretenimiento como por los desafíos estratégicos y creativos que presentan. Disfruto explorando distintas mecánicas de juego, historias inmersivas y cooperar en entornos multijugador, lo que también refuerza mis habilidades de resolución de problemas y trabajo en equipo.",
+
+        "hobbies2-title": "\uD83D\uDCFA TV, Películas y Series",
+        "hobbies2-descripcion": "Soy un entusiasta del cine y las series, ya que encuentro en ellas una excelente forma de entender distintas culturas, narrativas y estilos visuales. Me gusta analizar guiones, dirección y desarrollo de personajes, especialmente en géneros como la ciencia ficción, el drama y el thriller.",
+
+        "hobbies3-title": "⚽\uD83C\uDFC0\uD83C\uDFD0 Deportes (Fútbol, Baloncesto y Voleibol)",
+        "hobbies3-descripcion": "Practico deportes en mi tiempo libre, principalmente fútbol, baloncesto y voleibol. Estas actividades no solo me ayudan a mantenerme activo, sino que también fortalecen habilidades como el trabajo en equipo, la comunicación y la disciplina.",
+
+        "hobbies4-title": "\uD83C\uDFA7 Escuchar música",
+        "hobbies4-descripcion": "Escuchar música es una parte esencial de mi día a día. Me interesa una variedad de géneros, y suelo utilizar la música como fuente de inspiración, concentración o relajación. Aprecio especialmente cómo la música puede influir en el estado de ánimo y en la creatividad",
+
+        "hobbies5-title": "\uD83D\uDC68\u200D\uD83C\uDF73 Cocinar",
+        "hobbies5-descripcion": "Cocinar es una de mis formas favoritas de expresarme y desconectar. Me gusta experimentar con recetas nuevas, explorar sabores de diferentes culturas y compartir momentos con otras personas a través de la comida."
     }
 }

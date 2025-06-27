@@ -37,5 +37,21 @@
 
         "project5-title": "RoadMate",
         "project5-description": "RoadMate is an innovative mobile application developed for students of the European University of Madrid with the aim of optimizing their trips to campus. The tool is designed to reduce transportation costs and travel times, while encouraging interaction and collaboration between members of the university community. <br><br>Through the Design Thinking approach, we focus on optimizing both the user experience (UX) and the visual and interactive design (UI) of the application. RoadMate allows students to share rides with peers, offering an affordable, comfortable and efficient alternative to conventional transportation. In addition, the application includes functionalities such as the publication of travel announcements, messaging between users and options to customize transportation preferences."
+    },
+    "hobbies": {
+        "hobbies1-title": "\uD83C\uDFAE VideoGames",
+        "hobbies1-descripcion": "I'm passionate about video games both for their entertainment value and for the strategic and creative challenges they present. I enjoy exploring different game mechanics, immersive stories, and cooperating in multiplayer environments, which also strengthens my problem-solving and teamwork skills.",
+
+        "hobbies2-title": "\uD83D\uDCFA TV, Movies, and Series",
+        "hobbies2-descripcion": "I'm a film and series enthusiast, finding them to be an excellent way to understand different cultures, narratives, and visual styles. I enjoy analyzing scripts, directing, and developing characters, especially in genres like science fiction, drama, and thrillers.",
+
+        "hobbies3-title": "⚽\uD83C\uDFC0\uD83C\uDFD0 Sports (Soccer, Basketball, and Volleyball)",
+        "hobbies3-descripcion": "I play sports in my free time, primarily soccer, basketball, and volleyball. These activities not only help me stay active but also strengthen skills like teamwork, communication, and discipline.",
+
+        "hobbies4-title": "\uD83C\uDFA7 Listening to Music",
+        "hobbies4-descripcion": "Listening to music is an essential part of my daily life. I'm interested in a variety of genres and often use music as a source of inspiration, focus, or relaxation. I especially appreciate how music can influence mood and creativity.",
+
+        "hobbies5-title": "\uD83D\uDC68\u200D\uD83C\uDF73 Cooking",
+        "hobbies5-descripcion": "Cooking is one of my favorite ways to express myself and unwind. I enjoy experimenting with new recipes, exploring the flavors of different cultures, and sharing moments with others through food."
     }
 }

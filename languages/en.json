@@ -53,5 +53,11 @@
 
         "hobbies5-title": "\uD83D\uDC68\u200D\uD83C\uDF73 Cooking",
         "hobbies5-descripcion": "Cooking is one of my favorite ways to express myself and unwind. I enjoy experimenting with new recipes, exploring the flavors of different cultures, and sharing moments with others through food."
+    },
+    "tytles&names": {
+        "skill1": "Programming Languages",
+        "skill2": "Database",
+        "skill3": "IDEs y Tooling",
+        "skill4": "Embedded Systems"
     }
 }

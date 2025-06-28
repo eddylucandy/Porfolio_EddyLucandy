@@ -53,5 +53,11 @@
 
         "hobbies5-title": "\uD83D\uDC68\u200D\uD83C\uDF73 Cocinar",
         "hobbies5-descripcion": "Cocinar es una de mis formas favoritas de expresarme y desconectar. Me gusta experimentar con recetas nuevas, explorar sabores de diferentes culturas y compartir momentos con otras personas a través de la comida."
+    },
+    "tytles&names": {
+        "skill1": "Lenguajes de Programación",
+        "skill2": "Base de Datos",
+        "skill3": "IDEs y Herramientas de Soporte",
+        "skill4": "Sitemas Embebidos"
     }
 }

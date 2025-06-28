@@ -233,10 +233,13 @@ body.dark {
     padding: 1em;
 }
 
+
 .card__image-container {
     min-width: 320px;
     border-radius: var(--border-radius);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .card__header {

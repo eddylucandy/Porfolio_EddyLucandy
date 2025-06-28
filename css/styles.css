@@ -140,7 +140,7 @@ body.dark {
     cursor: pointer;
 }
 
-
+/* Color */
 .colors {
     display: flex;
     /* Utiliza flexbox para alinear los elementos hijos */

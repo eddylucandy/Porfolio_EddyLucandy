@@ -498,8 +498,7 @@ body.dark {
 
 @media screen and (min-width: 760px) {
     .buttons {
-        position: absolute;
-        bottom: 1em;
+        position: static; /* ¡MODIFICADO! Cambia a static para que fluya normalmente */
     }
 }
 
